@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { Image,View, Text } from "react-native";
 
 export default function App() {
   return (
@@ -10,7 +10,14 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>Universal React with Expo</Text>
-    </View>
+        <Image
+        style={{
+          resizeMode: "cover",
+          width: "100%",
+          height: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+        }} source={require("../OliversLingerie/images/splash.png")}></Image>
+      </View>
   );
 }
